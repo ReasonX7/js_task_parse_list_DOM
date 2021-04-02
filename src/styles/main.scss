@@ -18,7 +18,29 @@ ul {
   list-style-type: square;
 }
 
+li {
+  background-color: transparent;
+  padding: 0 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
 li:hover {
   font-weight: 700;
   cursor: default;
+}
+
+.highlight {
+  opacity: 1;
+  animation: fade 1s linear;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #8bc34a;
+  }
 }
